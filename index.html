@@ -39,11 +39,44 @@
       background: #000000;
       opacity: 22%;
   }
+  header {
+    height: 75px;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+    transition: all 0.5s;
+    color: #ffffff;
+  }
+  header.solid {
+    background-color: #ffffff;
+    color: #000000;
+  }
 </style>
+
+<script>
+  window.onscroll = function() {set_nav()};
+
+// Get the header
+  var header = document.getElementById("header");
+
+// Get the offset position of the navbar
+  var sticky = header.offsetTop;
+
+// Add the solid class to the header when you reach its scroll position. Remove "solid" when you leave the scroll position
+  function set_nav() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("solid");
+    } else {
+      header.classList.remove("solid");
+    }
+  }
+</script>
 
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<header id="header"><span>Eligh Ros</span></header>
 <body>
 <div class="pic"><div class="blur"><div class="darken"></div></div></div>
 <div class="head">Eligh Ros Personal Website</div>
