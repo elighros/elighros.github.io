@@ -5,14 +5,16 @@
 <meta http-equiv='pragma' content='no-cache'>
 
 <style>
-  .head {
+.head {
     font-size: 30px;
+    height: 800px;
   }
   body {
       margin: 0;
   }
   .pic {
-      position: relative;
+      position: absolute;
+      top: 0;
       height: 100vh;
       width: 100vw;
       max-width: 100%;
@@ -20,7 +22,7 @@
       background-image: url("assets/smith-rock.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      overflow: hidden;
+      overflow: clip;
   }
   .blur {
       position: relative;
@@ -40,12 +42,13 @@
       opacity: 22%;
   }
   header {
+    top: 0;
     height: 75px;
     width: 100%;
     position: sticky;
-    top: 20px;
     transition: all 0.5s;
     color: #ffffff;
+    z-index: 999;
   }
   header.solid {
     background-color: #ffffff;
@@ -76,9 +79,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<header id="header"><span>Eligh Ros</span></header>
 <body>
-<div class="pic"><div class="blur"><div class="darken"></div></div></div>
+      <header id="header"><span>Eligh Ros</span></header>
+
+<div class="pic">
+  <div class="blur">
+    <div class="darken">
+
+    </div>
+  </div>
+</div>
 <div class="head">Eligh Ros Personal Website</div>
 </body>
+
 </html>
