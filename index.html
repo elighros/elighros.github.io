@@ -5,43 +5,43 @@
 <meta http-equiv='pragma' content='no-cache'>
 
 <style>
-.head {
+head {
     font-size: 30px;
     height: 800px;
-  }
-  body {
-      margin: 0;
-  }
-  .pic {
-      position: absolute;
-      top: 0;
-      height: 100vh;
-      width: 100vw;
-      max-width: 100%;
-      max-height: 100%;
-      background-image: url("assets/smith-rock.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      overflow: clip;
-  }
-  .blur {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-      max-width: 100%;
-      max-height: 100%;
-      backdrop-filter: blur(2px);
-  }
-  .darken {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-      max-width: 100%;
-      max-height: 100%;
-      background: #000000;
-      opacity: 22%;
-  }
-  header {
+}
+body {
+    margin: 0;
+}
+.pic {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url("assets/smith-rock.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: clip;
+}
+.blur {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    backdrop-filter: blur(2px);
+}
+.darken {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background: #000000;
+    opacity: 22%;
+}
+header {
     top: 0;
     height: 75px;
     width: 100%;
@@ -49,43 +49,113 @@
     transition: all 0.5s;
     color: #ffffff;
     z-index: 999;
-  }
-  header.solid {
+    text-align: justify;
+}
+header.solid {
     background-color: #ffffff;
     color: #000000;
-  }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana, serif;
+}
+.navbar-title {
+    font-size: 2rem;
+    margin-left: 15%;
+}
+
+.navbar-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-right: 15%;
+}
+.navbar-links li {
+    margin-left: 10px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: inherit;
+    position: relative;
+}
+a:hover {
+    cursor: pointer;
+}
+.navbar-links li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .1s ease-in-out;
+}
+
+.navbar-links li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
 </style>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body>
-<header id="header"><span>Eligh Ros</span></header>
-<div class="pic">
-  <div class="blur">
-    <div class="darken">
+    <header class="navbar" id="navbar">
+        <div class="navbar-title">Eligh Ros</div>
+        <ul class="navbar-links">
+            <li><a onclick="window.scrollTo({top: window.screenTop, left: 0, behavior: 'smooth',});">Home</a></li>
+            <li><a onclick="window.scrollTo({top: .9 * window.innerHeight, left: 0, behavior: 'smooth',});">Education</a></li>
+            <li><a onclick="window.scrollTo({top: 2 * (.9 * window.innerHeight), left: 0, behavior: 'smooth',});">Work Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </header>
+    <div class="pic">
+        <div class="blur">
+            <div class="darken">
+            </div>
+        </div>
+
+
     </div>
-  </div>
-</div>
-<div class="head">Eligh Ros Personal Website</div>
+
+    <div style="height: 100vh"></div>
+    <div style="height: 100vh" class="head">Eligh Ros Personal Website</div>
 </body>
 
 <script>
   window.onscroll = function() {set_nav()};
 
 // Get the header
-  var header = document.getElementById("header");
+  var navbar = document.getElementById("navbar");
+  var navbar_links = document.getElementById("navbar-links");
 
 // Get the offset position of the navbar
-  var sticky = header.offsetTop;
+  var sticky = navbar.offsetTop;
 
 // Add the solid class to the header when you reach its scroll position. Remove "solid" when you leave the scroll position
   function set_nav() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("solid");
-    } else {
-      header.classList.remove("solid");
-    }
+      if (window.pageYOffset > sticky) {
+          navbar.classList.add("solid");
+          navbar_links.classList.add("solid");
+          document.getElementsByTagName("a").style.color = '#FFFFFFF';
+      } else {
+          navbar.classList.remove("solid");
+          navbar_links.classList.remove("solid");
+          document.getElementsByTagName("a").style.color = '#000000';
+
+      }
   }
 </script>
 
