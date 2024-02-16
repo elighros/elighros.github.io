@@ -5,106 +5,209 @@
 <meta http-equiv='pragma' content='no-cache'>
 
 <style>
-head {
-    font-size: 30px;
-    height: 800px;
-}
-body {
-    margin: 0;
-}
-.pic {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    background-image: url("assets/smith-rock.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: clip;
-}
-.blur {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    backdrop-filter: blur(2px);
-}
-.darken {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    background: #000000;
-    opacity: 22%;
-}
-header {
-    top: 0;
-    height: 75px;
-    width: 100%;
-    position: sticky;
-    transition: all 0.5s;
-    color: #ffffff;
-    z-index: 999;
-    text-align: justify;
-}
-header.solid {
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-}
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Verdana, serif;
-}
-.navbar-title {
-    font-size: 2rem;
-    margin-left: 15%;
-}
+    :root {
+        --links-color: #ffffff;
+    }
+    body {
+        margin: 0;
+    }
+    .pic {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url("assets/smith-rock.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: clip;
+    }
+    .blur {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        max-height: 100%;
+        backdrop-filter: blur(2px);
+    }
+    .darken {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        max-height: 100%;
+        background: #000000;
+        opacity: 22%;
+    }
+    .bio {
+        position: absolute;
+        text-align: center;
+        font-size: 1.2rem;
+        top: 68vh;
+        width: 50vw;
+        left: 25vw;
+        color: white;
+        font-family: "Century Gothic", serif;
+    }
+    .headshot {
+        position: absolute;
+        top: 18vh;
+        width: 20vw;
+        height: 20vw;
+        left: 40vw;
+        border-radius: 50%;
+        background-image: url("assets/eligh.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: clip;;
+    }
+    header {
+        top: 0;
+        height: 75px;
+        width: 100%;
+        position: sticky;
+        transition: all 0.5s;
+        color: #ffffff;
+        z-index: 999;
+        text-align: justify;
+    }
+    header.solid {
+        background-color: #ffffff;
+        color: #000000;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Century Gothic", serif;
+    }
+    .navbar-title {
+        font-size: 2.5rem;
+        margin-left: 15%;
+        font-weight: 600;
+    }
 
-.navbar-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    margin-right: 15%;
-}
-.navbar-links li {
-    margin-left: 10px;
-}
+    .navbar-links {
+        list-style-type: none;
+        font-size: 1.3rem;
+        padding: 0;
+        display: flex;
+        margin-right: 15%;
+    }
+    .navbar-links li {
+        margin-left: 10px;
+    }
 
-.navbar-links li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: inherit;
-    position: relative;
-}
-a:hover {
-    cursor: pointer;
-}
-.navbar-links li a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: white;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .1s ease-in-out;
-}
+    .navbar-links li a {
+        text-decoration: none;
+        margin: 5px 5px;
+        padding-bottom: 4px;
+        color: inherit;
+        position: relative;
+    }
+    a:hover {
+        cursor: pointer;
+    }
+    .navbar-links li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: var(--links-color);
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .1s ease-in-out;
+    }
 
-.navbar-links li a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-}
+    .navbar-links li a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .education-section {
+        height: 90vh;
+    }
+    .education-head {
+        position: relative;
+        font-size: 2rem;
+        font-family: "Century Gothic", serif;
+        text-align: center;
+        width: 30vw;
+        left: 35vw;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        font-weight: 600;
+    }
+    .education-flex {
+        display: flex;
+    }
+    .education-child {
+        flex: 1;
+        position: relative;
+        height: 45vh;
+        width: 35vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        box-shadow: 0 4px 10px 6px rgba(0, 0, 0, .2);
+    }
+    .child-child-1 {
+        flex: 1;
+        position: relative;
+        height: 25vh;
+        width: 30vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        align-content: center;
+    }
+    .child-child-2 {
+        flex: 2;
+        position: relative;
+        height: 25vh;
+        width: 40vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        align-content: center;
+    }
+    .education-child-head{
+        width: 43vw;
+        left: 5vw;
+        text-align: center;
+        font-family: "Century Gothic", serif;
+        font-weight: bold;
+        margin-bottom: 3vh;
+    }
+    .nda_logo {
+        position: relative;
+        left: 1vw;
+        height: 12vh;
+        width: auto;
+    }
+    .ab_tech_logo {
+        position: relative;
+        left: 1vw;
+        height: 12vh;
+        width: auto;
+    }
+    .highschool-text {
+        font-family: "Century Gothic", serif;
+        margin-top: 1vh;
+    }
+    .rit_logo {
+        position: relative;
+        margin-top: 8vh;
+        left: 1vw;
+        height: 12vh;
+        width: auto;
+    }
+    .college-text {
+        font-family: "Century Gothic", serif;
+        margin-top: 3.5vh;
+    }
 </style>
 
 <meta charset="UTF-8">
@@ -112,13 +215,13 @@ a:hover {
 
 <body>
     <header class="navbar" id="navbar">
-        <div class="navbar-title">Eligh Ros</div>
+        <div class="navbar-title" id="navbar-title">Eligh Ros</div>
         <ul class="navbar-links">
             <li><a onclick="window.scrollTo({top: window.screenTop, left: 0, behavior: 'smooth',});">Home</a></li>
             <li><a onclick="window.scrollTo({top: .9 * window.innerHeight, left: 0, behavior: 'smooth',});">Education</a></li>
             <li><a onclick="window.scrollTo({top: 2 * (.9 * window.innerHeight), left: 0, behavior: 'smooth',});">Work Experience</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a onclick="window.scrollTo({top: 3 * (.9 * window.innerHeight), left: 0, behavior: 'smooth',});">Projects</a></li>
+            <li><a onclick="window.scrollTo({top: 4 * (.9 * window.innerHeight), left: 0, behavior: 'smooth',});">Contact Me</a></li>
         </ul>
     </header>
     <div class="pic">
@@ -129,34 +232,86 @@ a:hover {
 
 
     </div>
-
-    <div style="height: 100vh"></div>
-    <div style="height: 100vh" class="head">Eligh Ros Personal Website</div>
+    <div class="headshot"></div>
+    <div class="bio">Hello! I'm Eligh Ros, a passionate computer scientist and software developer based in Phoenix,
+        Arizona. I specialize in creating efficient algorithms and building robust software solutions.
+        <br><br>
+        Feel free to explore my portfolio and get in touch to discuss collaboration opportunities!</div>
+    <div style="height: 90vh"></div>
+    <div class="education-section">
+        <p class="education-head">Education Overview</p>
+        <div class="education-flex">
+            <div class="education-child">
+                <p class="education-child-head">2016-2020: Martin L. Nesbitt Discovery Academy/Asheville Buncombe Technical Community College</p>
+                <div class="education-flex">
+                    <div class="child-child-1" style="width: 20vw">
+                        <img class="nda_logo" src="assets/nesbitt-discovery-academy.jpg" alt="Logo1">
+                        <img class="ab_tech_logo" src="assets/ab-tech.jpg" alt="Logo2">
+                    </div>
+                    <div class="child-child-2">
+                        <p class="highschool-text">
+                            My interest in technology started early, with my application and enrollment to Nesbitt Discovery
+                            Academy, the only STEM focused high school in Buncombe County, North Carolina. During my
+                            time here I was able to pursue various dual enrollment opportunities through AB-Tech, a local
+                            community college. This experience not only prepared me for full-time college enrollment,
+                            but greatly expedited the process of completing my undergraduate studies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-child">
+                <p class="education-child-head">2020-2024: Rochester Institute of Technology</p>
+                <div class="education-flex">
+                    <div class="child-child-1" style="width: 20vw">
+                        <img class="rit_logo" src="assets/rit.png" alt="Logo3">
+                    </div>
+                    <div class="child-child-2">
+                        <p class="college-text">
+                            In 2020 I enrolled in the five-year computer science program at Rochester Institute of
+                            Technology, which includes four years of classes, two semester-long internships, and one
+                            summer internship. Thanks to the transfer credits that I received from my dual enrollment
+                            classes in high school and a couple of summer classes, I was able to graduate a year early
+                            in 2024 with my Bachelor's of Science in Computer Science.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 90vh" class="head">Eligh Ros Personal Website</div>
+    <div style="height: 90vh" class="head">Eligh Ros Personal Website</div>
+    <div style="height: 90vh" class="head">Eligh Ros Personal Website</div>
+    <div style="height: 30vh" class="head">Footer</div>
 </body>
 
 <script>
-  window.onscroll = function() {set_nav()};
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
 
-// Get the header
-  var navbar = document.getElementById("navbar");
-  var navbar_links = document.getElementById("navbar-links");
+    window.onscroll = function() {set_nav()};
 
-// Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
+    // Get the header
+    const navbar = document.getElementById("navbar");
+    const navbar_title = document.getElementById("navbar-title");
+    const navbar_links = document.getElementById("navbar-links");
 
-// Add the solid class to the header when you reach its scroll position. Remove "solid" when you leave the scroll position
-  function set_nav() {
-      if (window.pageYOffset > sticky) {
-          navbar.classList.add("solid");
-          navbar_links.classList.add("solid");
-          document.getElementsByTagName("a").style.color = '#FFFFFFF';
-      } else {
-          navbar.classList.remove("solid");
-          navbar_links.classList.remove("solid");
-          document.getElementsByTagName("a").style.color = '#000000';
+    // Get the offset position of the navbar
+    const sticky = navbar.offsetTop;
 
-      }
-  }
+    // Add the solid class to the header when you reach its scroll position. Remove "solid" when you leave the scroll position
+    function set_nav() {
+          const root = document.querySelector(":root");
+          if (window.pageYOffset > sticky) {
+              navbar.classList.add("solid");
+              root.style.setProperty("--links-color", '#000000');
+              navbar_links.classList.add("solid");
+          } else {
+              navbar.classList.remove("solid");
+              root.style.setProperty("--links-color", '#ffffff');
+              navbar_links.classList.remove("solid");
+          }
+    }
 </script>
 
 </html>
