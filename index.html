@@ -85,9 +85,10 @@
         font-family: "Century Gothic", serif;
     }
     .navbar-title {
-        font-size: 2.5rem;
+        font-size: 4.5vh;
         margin-left: 15%;
         font-weight: 600;
+        white-space: nowrap;
     }
 
     .navbar-links {
@@ -107,6 +108,7 @@
         padding-bottom: 4px;
         color: inherit;
         position: relative;
+        white-space: nowrap;
     }
     a:hover {
         cursor: pointer;
@@ -134,7 +136,7 @@
     }
     .education-head {
         position: relative;
-        font-size: 2rem;
+        font-size: 4vh;
         font-family: "Century Gothic", serif;
         text-align: center;
         width: 30vw;
@@ -145,6 +147,8 @@
     }
     .education-flex {
         display: flex;
+        align-content: center;
+        height: 30vh;
     }
     .education-child {
         flex: 1;
@@ -160,18 +164,18 @@
         position: relative;
         height: 25vh;
         width: 30vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
         align-content: center;
+        margin: auto;
     }
     .child-child-2 {
         flex: 2;
         position: relative;
-        height: 25vh;
+        height: 28vh;
         width: 40vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
+        margin: auto 1vw auto 2vw;
         align-content: center;
+        overflow-y: auto;
+        vertical-align: middle
     }
     .education-child-head{
         width: 43vw;
@@ -180,6 +184,7 @@
         font-family: "Century Gothic", serif;
         font-weight: bold;
         margin-bottom: 3vh;
+        font-size: 2.2vh;
     }
     .nda_logo {
         position: relative;
@@ -195,26 +200,44 @@
     }
     .highschool-text {
         font-family: "Century Gothic", serif;
-        margin-top: 1vh;
+        font-size: 2vh;
     }
     .rit_logo {
         position: relative;
-        margin-top: 8vh;
         left: 1vw;
         height: 12vh;
         width: auto;
+        margin-top: 9vh;
+        margin-bottom: auto;
     }
     .college-text {
         font-family: "Century Gothic", serif;
-        margin-top: 3.5vh;
+        font-size: 2vh;
     }
     .relevant-classes {
         position: relative;
         height: 25vh;
         width: 70vw;
         margin-left: 15vw;
-        margin-top: 5vh;
+        margin-top: 23vh;
         box-shadow: 0 4px 10px 6px rgba(0, 0, 0, .2);
+    }
+    .relevant-classes-head {
+        position: relative;
+        font-size: 2.5vh;
+        width: 70vw;
+        font-family: "Century Gothic", serif;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1.8vh;
+    }
+    .relevant-classes-body {
+        position: relative;
+        font-size: 2vh;
+        width: 66vw;
+        font-family: "Century Gothic", serif;
+        text-align: center;
+        overflow-y: auto;
     }
 </style>
 
@@ -245,12 +268,12 @@
         Arizona. I specialize in creating efficient algorithms and building robust software solutions.
         <br><br>
         Feel free to explore my portfolio and get in touch to discuss collaboration opportunities!</div>
-    <div style="height: 92vh"></div>
+    <div style="height: 93vh"></div>
     <div class="education-section">
         <p class="education-head">Education Overview</p>
         <div class="education-flex">
             <div class="education-child">
-                <p class="education-child-head">2016-2020: Martin L. Nesbitt Discovery Academy/Asheville Buncombe Technical Community College</p>
+                <p class="education-child-head">2016-2020: Nesbitt Discovery Academy/AB-Tech Community College</p>
                 <div class="education-flex">
                     <div class="child-child-1" style="width: 20vw">
                         <img class="nda_logo" src="assets/nesbitt-discovery-academy.jpg" alt="Logo1">
@@ -277,7 +300,7 @@
                         <p class="college-text">
                             In 2020 I enrolled in the five-year computer science program at Rochester Institute of
                             Technology, which includes four years of classes, two semester-long internships, and one
-                            summer internship. Thanks to the transfer credits that I received from my dual enrollment
+                            summer internship. As a result of the transfer credits that I received from my dual enrollment
                             classes in high school and a couple of summer classes, I was able to graduate a year early
                             in 2024 with my Bachelor's of Science in Computer Science.
                         </p>
@@ -286,7 +309,21 @@
             </div>
         </div>
         <div class="relevant-classes">
-
+            <p class="relevant-classes-head">Relevant Classes</p>
+            <p class="relevant-classes-body">▪ MATH-190: Discrete Math for Computing
+                ▪ SWEN-261: Intro to Software Engineering
+                ▪ CSCI-141: Computer Science 1
+                ▪ CSCI-142: Computer Science 2
+                ▪ CSCI-230: Principles of Data Management
+                ▪ CSCI-243: The Mechanics of Programming
+                ▪ CSCI-250: Concepts of Computer Systems
+                ▪ CSCI-251: Concepts of Parallel and Distributed Systems
+                ▪ CSCI-261: Analysis of Algorithms
+                ▪ CSCI-262: Intro to Computer Science Theory
+                ▪ CSCI-331: Intro to Artificial Intelligence
+                ▪ CSCI-344: Programming Language Concepts
+                ▪ CSCI-420: Principles of Data Mining
+                ▪ CSCI-462: Intro to Cryptography</p>
         </div>
     </div>
     <div style="height: 93vh" class="head">Eligh Ros Personal Website</div>
