@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
 
 <style>
@@ -93,7 +93,7 @@
 
     .navbar-links {
         list-style-type: none;
-        font-size: 1.3rem;
+        font-size: 1.2vw;
         padding: 0;
         display: flex;
         margin-right: 15%;
@@ -198,14 +198,12 @@
     .nda_logo {
         position: relative;
         left: 1vw;
-        height: 12vh;
-        width: auto;
+        max-width: 20vw;
     }
     .ab_tech_logo {
         position: relative;
         left: 1vw;
-        height: 12vh;
-        width: auto;
+        max-width: 20vw;
     }
     .highschool-text {
         font-family: "Century Gothic", serif;
@@ -214,8 +212,7 @@
     .rit_logo {
         position: relative;
         left: 1vw;
-        height: 12vh;
-        width: auto;
+        max-width: 20vw;
         margin-top: 7vh;
         margin-bottom: auto;
     }
@@ -225,7 +222,7 @@
     }
     .relevant-classes {
         position: relative;
-        height: 25vh;
+        height: 22vh;
         width: 70vw;
         margin-left: 15vw;
         margin-top: 23vh;
@@ -239,14 +236,22 @@
         font-weight: bold;
         text-align: center;
         padding-top: 1.8vh;
+        margin-bottom: 0.4vh;
     }
     .relevant-classes-body {
         position: relative;
+        width: 66vw;
+        height: 16vh;
+        overflow-y: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .relevant-classes-text {
+        position: relative;
         font-size: 2vh;
-        width: inherit;
         font-family: "Century Gothic", serif;
         text-align: center;
-        overflow-y: auto;
+        margin-top: .5vh;
     }
     .experience-flex {
         display: flex;
@@ -297,6 +302,21 @@
         margin-bottom: 3vh;
         font-size: 2.2vh;
     }
+    .project-child-text{
+        text-align: center;
+        font-family: "Century Gothic", serif;
+        margin-bottom: 2vh;
+        font-size: 1.7vh;
+        margin-top: .5vh;
+    }
+    .project-child-body {
+        overflow-y: auto;
+        height: 24.5vh;
+        width: 25.5vw;
+        margin-top: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 
 </style>
 
@@ -304,72 +324,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body>
-    <header class="navbar" id="navbar">
-        <div class="navbar-title" id="navbar-title">Eligh Ros</div>
-        <ul class="navbar-links">
-            <li><a onclick="window.scrollTo({top: window.screenTop, left: 0, behavior: 'smooth',});">Home</a></li>
-            <li><a onclick="window.scrollTo({top: .92 * window.innerHeight, left: 0, behavior: 'smooth',});">Education</a></li>
-            <li><a onclick="window.scrollTo({top: 2 * (.91 * window.innerHeight), left: 0, behavior: 'smooth',});">Work Experience</a></li>
-            <li><a onclick="window.scrollTo({top: 3 * (.907 * window.innerHeight), left: 0, behavior: 'smooth',});">Projects</a></li>
-            <li><a onclick="window.scrollTo({top: 4 * (.905 * window.innerHeight), left: 0, behavior: 'smooth',});">Contact Me</a></li>
-        </ul>
-    </header>
-    <div class="pic">
-        <div class="blur">
-            <div class="darken">
-            </div>
+<header class="navbar" id="navbar">
+    <div class="navbar-title" id="navbar-title">Eligh Ros</div>
+    <ul class="navbar-links">
+        <li><a onclick="window.scrollTo({top: window.screenTop, left: 0, behavior: 'smooth',});">Home</a></li>
+        <li><a onclick="window.scrollTo({top: .92 * window.innerHeight, left: 0, behavior: 'smooth',});">Education</a></li>
+        <li><a onclick="window.scrollTo({top: 2 * (.91 * window.innerHeight), left: 0, behavior: 'smooth',});">Work Experience</a></li>
+        <li><a onclick="window.scrollTo({top: 3 * (.907 * window.innerHeight), left: 0, behavior: 'smooth',});">Projects</a></li>
+        <li><a onclick="window.scrollTo({top: 4 * (.905 * window.innerHeight), left: 0, behavior: 'smooth',});">Contact Me</a></li>
+    </ul>
+</header>
+<div class="pic">
+    <div class="blur">
+        <div class="darken">
         </div>
-
-
     </div>
-    <div class="headshot"></div>
-    <div class="bio">Hello! I'm Eligh Ros, a passionate computer scientist and software developer based in Phoenix,
-        Arizona. I specialize in creating efficient algorithms and building robust software solutions.
-        <br><br>
-        Feel free to explore my portfolio and get in touch to discuss collaboration opportunities!</div>
-    <div style="height: 93vh"></div>
-    <div class="education-section">
-        <p class="head">Education Overview</p>
-        <div class="education-flex">
-            <div class="education-child">
-                <p class="education-child-head">2016-2020: Nesbitt Discovery Academy/AB-Tech Community College</p>
-                <div class="education-flex">
-                    <div class="child-child-1" style="width: 20vw">
-                        <img class="nda_logo" src="assets/nesbitt-discovery-academy.jpg" alt="Logo1">
-                        <img class="ab_tech_logo" src="assets/ab-tech.jpg" alt="Logo2">
-                    </div>
-                    <div class="child-child-2">
-                        <p class="highschool-text">
-                            My interest in technology started early, with my application and enrollment to Nesbitt Discovery
-                            Academy, the only STEM focused high school in Buncombe County, North Carolina. During my
-                            time here I was able to pursue various dual enrollment opportunities through AB-Tech, a local
-                            community college. This experience not only prepared me for full-time college enrollment,
-                            but greatly expedited the process of completing my undergraduate studies.
-                        </p>
-                    </div>
+
+
+</div>
+<div class="headshot"></div>
+<div class="bio">Hello! I'm Eligh Ros, a passionate computer scientist and software developer based in Phoenix,
+    Arizona. I specialize in creating efficient algorithms and building robust software solutions.
+    <br><br>
+    Feel free to explore my portfolio and get in touch to discuss collaboration opportunities!</div>
+<div style="height: 93vh"></div>
+<div class="education-section">
+    <p class="head">Education Overview</p>
+    <div class="education-flex">
+        <div class="education-child">
+            <p class="education-child-head">2016-2020: Nesbitt Discovery Academy/AB-Tech Community College</p>
+            <div class="education-flex">
+                <div class="child-child-1" style="width: 20vw">
+                    <img class="nda_logo" src="assets/nesbitt-discovery-academy.jpg" alt="Logo1">
+                    <img class="ab_tech_logo" src="assets/ab-tech.jpg" alt="Logo2">
                 </div>
-            </div>
-            <div class="education-child">
-                <p class="education-child-head">2020-2024: Rochester Institute of Technology</p>
-                <div class="education-flex">
-                    <div class="child-child-1" style="width: 20vw">
-                        <img class="rit_logo" src="assets/rit.png" alt="Logo3">
-                    </div>
-                    <div class="child-child-2">
-                        <p class="college-text">
-                            In 2020 I enrolled in the five-year computer science program at Rochester Institute of
-                            Technology, which includes four years of classes, two semester-long internships, and one
-                            summer internship. As a result of the transfer credits that I received from my dual enrollment
-                            classes in high school and a couple of summer classes, I was able to graduate a year early
-                            in 2024 with my Bachelor's of Science in Computer Science.
-                        </p>
-                    </div>
+                <div class="child-child-2">
+                    <p class="highschool-text">
+                        My interest in technology started early, with my application and enrollment to Nesbitt Discovery
+                        Academy, the only STEM focused high school in Buncombe County, North Carolina. During my
+                        time here I was able to pursue various dual enrollment opportunities through AB-Tech, a local
+                        community college. This experience not only prepared me for full-time college enrollment,
+                        but greatly expedited the process of completing my undergraduate studies.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="relevant-classes">
-            <p class="relevant-classes-head">Relevant Classes</p>
-            <p class="relevant-classes-body">▪ MATH-190: Discrete Math for Computing
+        <div class="education-child">
+            <p class="education-child-head">2020-2024: Rochester Institute of Technology</p>
+            <div class="education-flex">
+                <div class="child-child-1" style="width: 20vw">
+                    <img class="rit_logo" src="assets/rit.png" alt="Logo3">
+                </div>
+                <div class="child-child-2">
+                    <p class="college-text">
+                        In 2020 I enrolled in the five-year computer science program at Rochester Institute of
+                        Technology, which includes four years of classes, two semester-long internships, and one
+                        summer internship. As a result of the transfer credits that I received from my dual enrollment
+                        classes in high school and a couple of summer classes, I was able to graduate a year early
+                        in 2024 with my Bachelor's of Science in Computer Science.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relevant-classes">
+        <p class="relevant-classes-head">Relevant Classes</p>
+        <div class="relevant-classes-body">
+            <p class="relevant-classes-text">▪ MATH-190: Discrete Math for Computing
                 ▪ SWEN-261: Intro to Software Engineering
                 ▪ CSCI-141: Computer Science 1
                 ▪ CSCI-142: Computer Science 2
@@ -385,49 +406,67 @@
                 ▪ CSCI-462: Intro to Cryptography</p>
         </div>
     </div>
-    <div class="experience-section">
-        <p class="head">Work Experience</p>
-        <div class="experience-flex">
-            <div class="experience-child"></div>
-            <div class="experience-child"></div>
-        </div>
+</div>
+<div class="experience-section">
+    <p class="head">Work Experience</p>
+    <div class="experience-flex">
+        <div class="experience-child"></div>
+        <div class="experience-child"></div>
     </div>
-    <div class="projects-section">
-        <p class="head">Projects</p>
-        <div class="projects-flex">
-            <div class="projects-child">
-                <div class="center">
-                    <p class="project-child-head">Databases Class Automation Tool</p>
-                    <video class="project-video" controls>
-                        <source src="assets/vanden-brul-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="projects-child">
-                <div class="center">
-                    <p class="project-child-head">Vanden Brul Display Screen</p>
-                    <video class="project-video" controls>
-                        <source src="assets/vanden-brul-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="projects-child">
-                <div class="center">
-                    <p class="project-child-head">Phil Saunders Timeline</p>
-                    <video class="project-video" controls>
-                        <source src="assets/saunders-timeline-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+</div>
+<div class="projects-section">
+    <p class="head">Projects</p>
+    <div class="projects-flex">
+        <div class="projects-child">
+            <div class="center">
+                <p class="project-child-head">Databases Class Automation Tool</p>
+                <video class="project-video" controls>
+                    <source src="assets/student_database_automation_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-child-body">
+                    <p class="project-child-text">
+                        This is a tool residing on the Saunders College of Business faculty website which I developed for professors teaching database classes at RIT.
+                        The page allows users to create Databases Class entry's, which automatically generate a master database and phpmyadmin login
+                        in either our MySQL or MariaDB server. The professor can then add students one at a time manually or in bulk by importing an Excel. The master account
+                        has access to all databases in the class while student accounts can only view their own.</p>
                 </div>
             </div>
         </div>
+        <div class="projects-child">
+            <div class="center">
+                <p class="project-child-head">Vanden Brul Display Screen</p>
+                <video class="project-video" controls>
+                    <source src="assets/vanden-brul-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-child-body">
+                    <p class="project-child-text">
+                        The purpose of this project was to create a display interface for the Saunders College of Business at RIT
+                        that displayed all past winners of the Vanden Brul award. I worked as the sole developer on this project and built the display
+                        using HTML, JavaScript, and CSS within the CodeIgniter 4 framework.</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects-child">
+            <div class="center">
+                <p class="project-child-head">Phil Saunders Timeline</p>
+                <video class="project-video" controls>
+                    <source src="assets/saunders-timeline-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-child-body">
+                    <p class="project-child-text">
+                        This project revolved around making a timeline for Phil Saunders that could be shown on a touch screen display in the RIT college of business building.
+                        The CSS, HTML, and JavaScript was written entirely by hand without the use of any frontend frameworks.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contact-section">
-        <p class="head">Contact Me</p>
-    </div>
-    <div style="height: 30vh" class="head">Footer</div>
+</div>
+<div class="contact-section">
+    <p class="head">Contact Me</p>
+</div>
 </body>
 
 <script>
@@ -447,15 +486,15 @@
 
     // Add the solid class to the header when you reach its scroll position. Remove "solid" when you leave the scroll position
     function set_nav() {
-          const root = document.querySelector(":root");
-          if (window.pageYOffset > sticky) {
-              navbar.classList.add("solid");
-              root.style.setProperty("--links-color", '#000000');
-              navbar_links.classList.add("solid");
-          } else {
-              navbar.classList.remove("solid");
-              root.style.setProperty("--links-color", '#ffffff');
-              navbar_links.classList.remove("solid");
-          }
+        const root = document.querySelector(":root");
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("solid");
+            root.style.setProperty("--links-color", '#000000');
+            navbar_links.classList.add("solid");
+        } else {
+            navbar.classList.remove("solid");
+            root.style.setProperty("--links-color", '#ffffff');
+            navbar_links.classList.remove("solid");
+        }
     }
 </script>
