@@ -15,9 +15,6 @@
         position: absolute;
         top: 0;
         height: 100vh;
-        width: 100vw;
-        max-width: 100%;
-        max-height: 100%;
         background-image: url("assets/smith-rock.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -38,12 +35,12 @@
         max-width: 100%;
         max-height: 100%;
         background: #000000;
-        opacity: 22%;
+        opacity: 35%;
     }
     .bio {
         position: absolute;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 2.4vh;
         top: 68vh;
         width: 50vw;
         left: 25vw;
@@ -320,6 +317,35 @@
         margin-left: 1vw;
         margin-right: 1vw;
     }
+    .experience-head{
+        text-align: center;
+        font-family: "Century Gothic", serif;
+        font-weight: bold;
+        margin-bottom: 3vh;
+        font-size: 3vh;
+    }
+    .experience-sub-head{
+        text-align: center;
+        font-family: "Century Gothic", serif;
+        font-weight: bold;
+        margin-bottom: 3vh;
+        font-size: 2.5vh;
+    }
+    .experience-text{
+        text-align: center;
+        font-family: "Century Gothic", serif;
+        margin-bottom: 2vh;
+        font-size: 2.2vh;
+        margin-top: .5vh;
+    }
+    .experience-body {
+        overflow-y: auto;
+        max-height: 39vh;
+        max-width: 41.5vw;
+        margin-top: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 
 </style>
 
@@ -380,7 +406,7 @@
                 </div>
                 <div class="child-child-2">
                     <p class="college-text">
-                        In 2020 I enrolled in the five-year computer science program at Rochester Institute of
+                        In 2020, I enrolled in the five-year computer science program at Rochester Institute of
                         Technology, which includes four years of classes, two semester-long internships, and one
                         summer internship. As a result of the transfer credits that I received from my dual enrollment
                         classes in high school and a couple of summer classes, I was able to graduate a year early
@@ -413,8 +439,51 @@
 <div class="experience-section">
     <p class="head">Work Experience</p>
     <div class="experience-flex">
-        <div class="experience-child"></div>
-        <div class="experience-child"></div>
+        <div class="experience-child">
+            <p class="experience-head">Saunders College of Business</p>
+            <p class="experience-sub-head">
+                Web Operations Software Developer from January 2023 to May 2024
+                <br>
+                Rochester, New York
+            </p>
+            <div class="experience-body">
+                <p class="experience-text">
+                    I completed two semester-long full-time internships and one semester of part-time work as a Software Developer. My responsibilities
+                    in this position included updating and developing touch screen display interfaces for the building, creating tools for faculty on our website,
+                    resolving web-related tickets for staff, and managing equipment reservations.
+                    <br><br>
+                    This role provided me with exposure to a diverse set of languages, tools, and frameworks, such as PHP, HTML, CSS, JavaScript, AJAX calls,
+                    SQL, DataTables, and CodeIgniter 4, among others.
+                    <br><br>
+                    This position also presented me with the opportunity to collaborate with faculty members in a professional environment, ensuring that the
+                    products I developed were user-friendly and aligned with user requirements. This experience not only honed my technical skills but also
+                    enhanced my interpersonal abilities.
+                </p>
+            </div>
+        </div>
+        <div class="experience-child">
+            <p class="experience-head">Visual Alpha</p>
+            <p class="experience-sub-head">
+                Web Developer Intern from June 2023 to August 2023
+                <br>
+                Tokyo, Japan
+            </p>
+            <div class="experience-body">
+                <p class="experience-text">
+                    During the summer of 2023, I had the opportunity to work as an intern at Visual Alpha, a SaaS
+                    Fintech startup based in Tokyo, Japan specializing in investment management services.
+                    During this period, my primary focus was on restructuring the back-end code of their document
+                    parsing software. This software was one of their many tools, and was responsible for reading imported files, computing crucial
+                    investment metrics, and caching information as needed. It operated within a Node.js
+                    environment, utilizing JavaScript and Typescript, while relying on AWS S3 for caching
+                    functionalities.
+                    <br><br>
+                    This internship not only provided valuable exposure to real-world professional development but
+                    also offered the unique experience of working abroad. It enabled me to collaborate with individuals
+                    from diverse backgrounds, fostering my ability to adapt to and succeed in unfamiliar environments.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 <div class="projects-section">
@@ -430,8 +499,8 @@
                 <div class="project-child-body">
                     <p class="project-child-text">
                         This is a tool residing on the Saunders College of Business faculty website which I developed for professors teaching database classes at RIT.
-                        The page allows users to create Databases Class entry's, which automatically generate a master database and phpmyadmin login
-                        in either our MySQL or MariaDB server. The professor can then add students one at a time manually or in bulk by importing an Excel. The master account
+                        The page allows users to create a Databases Class entry, which automatically generates a master database and phpmyadmin login
+                        on either our MySQL or MariaDB server. The professor can then add students manually one at a time or in bulk by importing an Excel. The master account
                         has access to all databases in the class while student accounts can only view their own.</p>
                 </div>
             </div>
