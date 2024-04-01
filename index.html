@@ -132,9 +132,18 @@
         transform: scaleX(1);
     }
     .education-section {
-        height: 90vh;
+        height: 89vh;
     }
-    .education-head {
+    .experience-section{
+        height: 89vh;
+    }
+    .projects-section {
+        height: 89vh;
+    }
+    .contact-section {
+        height: 89vh;
+    }
+    .head {
         position: relative;
         font-size: 4vh;
         font-family: "Century Gothic", serif;
@@ -207,7 +216,7 @@
         left: 1vw;
         height: 12vh;
         width: auto;
-        margin-top: 9vh;
+        margin-top: 7vh;
         margin-bottom: auto;
     }
     .college-text {
@@ -239,6 +248,56 @@
         text-align: center;
         overflow-y: auto;
     }
+    .experience-flex {
+        display: flex;
+        align-content: center;
+        margin-top: 8vh;
+        height: 65vh;
+    }
+    .experience-child {
+        flex: 1;
+        position: relative;
+        height: inherit;
+        width: 35vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        box-shadow: 0 4px 10px 6px rgba(0, 0, 0, .2);
+    }
+
+    .projects-flex {
+        display: flex;
+        align-content: center;
+        margin-top: 8vh;
+        height: 65vh;
+    }
+    .projects-child {
+        flex: 1;
+        position: relative;
+        height: inherit;
+        width: 22vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        box-shadow: 0 4px 10px 6px rgba(0, 0, 0, .2);
+        horiz-align: center;
+    }
+    div.center {
+        text-align: center;
+    }
+    .project-video {
+        position: relative;
+        width: 26vw;
+        height: 27vh;
+        margin-top: 1vh;
+
+    }
+    .project-child-head{
+        text-align: center;
+        font-family: "Century Gothic", serif;
+        font-weight: bold;
+        margin-bottom: 3vh;
+        font-size: 2.2vh;
+    }
+
 </style>
 
 <meta charset="UTF-8">
@@ -251,8 +310,8 @@
             <li><a onclick="window.scrollTo({top: window.screenTop, left: 0, behavior: 'smooth',});">Home</a></li>
             <li><a onclick="window.scrollTo({top: .92 * window.innerHeight, left: 0, behavior: 'smooth',});">Education</a></li>
             <li><a onclick="window.scrollTo({top: 2 * (.91 * window.innerHeight), left: 0, behavior: 'smooth',});">Work Experience</a></li>
-            <li><a onclick="window.scrollTo({top: 3 * (.914 * window.innerHeight), left: 0, behavior: 'smooth',});">Projects</a></li>
-            <li><a onclick="window.scrollTo({top: 4 * (.9158* window.innerHeight), left: 0, behavior: 'smooth',});">Contact Me</a></li>
+            <li><a onclick="window.scrollTo({top: 3 * (.907 * window.innerHeight), left: 0, behavior: 'smooth',});">Projects</a></li>
+            <li><a onclick="window.scrollTo({top: 4 * (.905 * window.innerHeight), left: 0, behavior: 'smooth',});">Contact Me</a></li>
         </ul>
     </header>
     <div class="pic">
@@ -270,7 +329,7 @@
         Feel free to explore my portfolio and get in touch to discuss collaboration opportunities!</div>
     <div style="height: 93vh"></div>
     <div class="education-section">
-        <p class="education-head">Education Overview</p>
+        <p class="head">Education Overview</p>
         <div class="education-flex">
             <div class="education-child">
                 <p class="education-child-head">2016-2020: Nesbitt Discovery Academy/AB-Tech Community College</p>
@@ -326,9 +385,48 @@
                 ▪ CSCI-462: Intro to Cryptography</p>
         </div>
     </div>
-    <div style="height: 93vh" class="head">Eligh Ros Personal Website</div>
-    <div style="height: 93vh" class="head">Eligh Ros Personal Website</div>
-    <div style="height: 93vh" class="head">Eligh Ros Personal Website</div>
+    <div class="experience-section">
+        <p class="head">Work Experience</p>
+        <div class="experience-flex">
+            <div class="experience-child"></div>
+            <div class="experience-child"></div>
+        </div>
+    </div>
+    <div class="projects-section">
+        <p class="head">Projects</p>
+        <div class="projects-flex">
+            <div class="projects-child">
+                <div class="center">
+                    <p class="project-child-head">Databases Class Automation Tool</p>
+                    <video class="project-video" controls>
+                        <source src="assets/vanden-brul-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="projects-child">
+                <div class="center">
+                    <p class="project-child-head">Vanden Brul Display Screen</p>
+                    <video class="project-video" controls>
+                        <source src="assets/vanden-brul-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="projects-child">
+                <div class="center">
+                    <p class="project-child-head">Phil Saunders Timeline</p>
+                    <video class="project-video" controls>
+                        <source src="assets/saunders-timeline-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-section">
+        <p class="head">Contact Me</p>
+    </div>
     <div style="height: 30vh" class="head">Footer</div>
 </body>
 
