@@ -254,6 +254,7 @@
         overflow-y: auto;
         padding-left: 1vw;
         padding-right: 1vw;
+        text-align: center;
     }
     .relevant-classes-text {
         position: relative;
@@ -410,6 +411,32 @@
         background: #f6f6f6;
         margin-top: 14vh;
     }
+    .footer-head {
+        font-family: "Century Gothic", serif;
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        color: #000000;
+        text-decoration: none !important;
+    }
+    .linkedin-logo {
+        margin-left: 49vw;
+    }
+    .footer-text {
+        font-family: "Century Gothic", serif;
+        font-size: 2vh;
+        text-align: center;
+        margin-top: 1vh;
+    }
+    .relevant-classes-body p {
+        display: inline;
+        white-space: nowrap;
+        margin: .1vh .6vw;
+        padding-left: .2vw;
+        padding-right: .2vw;
+    }
 </style>
 
 <meta charset="UTF-8">
@@ -481,20 +508,20 @@
     <div class="relevant-classes">
         <p class="relevant-classes-head">Relevant Classes</p>
         <div class="relevant-classes-body">
-            <p class="relevant-classes-text">▪ MATH-190: Discrete Math for Computing
-                ▪ SWEN-261: Intro to Software Engineering
-                ▪ CSCI-141: Computer Science 1
-                ▪ CSCI-142: Computer Science 2
-                ▪ CSCI-230: Principles of Data Management
-                ▪ CSCI-243: The Mechanics of Programming
-                ▪ CSCI-250: Concepts of Computer Systems
-                ▪ CSCI-251: Concepts of Parallel and Distributed Systems
-                ▪ CSCI-261: Analysis of Algorithms
-                ▪ CSCI-262: Intro to Computer Science Theory
-                ▪ CSCI-331: Intro to Artificial Intelligence
-                ▪ CSCI-344: Programming Language Concepts
-                ▪ CSCI-420: Principles of Data Mining
-                ▪ CSCI-462: Intro to Cryptography</p>
+            <p class="relevant-classes-text">▪ MATH-190: Discrete Math for Computing</p>
+            <p class="relevant-classes-text">▪ SWEN-261: Intro to Software Engineering</p>
+            <p class="relevant-classes-text">▪ CSCI-141: Computer Science 1</p>
+            <p class="relevant-classes-text">▪ CSCI-142: Computer Science 2</p>
+            <p class="relevant-classes-text">▪ CSCI-230: Principles of Data Management</p>
+            <p class="relevant-classes-text">▪ CSCI-243: The Mechanics of Programming</p>
+            <p class="relevant-classes-text">▪ CSCI-250: Concepts of Computer Systems</p>
+            <p class="relevant-classes-text">▪ CSCI-251: Concepts of Parallel and Distributed Systems</p>
+            <p class="relevant-classes-text">▪ CSCI-261: Analysis of Algorithms</p>
+            <p class="relevant-classes-text">▪ CSCI-262: Intro to Computer Science Theory</p>
+            <p class="relevant-classes-text">▪ CSCI-331: Intro to Artificial Intelligence</p>
+            <p class="relevant-classes-text">▪ CSCI-344: Programming Language Concepts</p>
+            <p class="relevant-classes-text">▪ CSCI-420: Principles of Data Mining</p>
+            <p class="relevant-classes-text">▪ CSCI-462: Intro to Cryptography</p>
         </div>
     </div>
 </div>
@@ -580,7 +607,7 @@
                 <div class="project-child-body">
                     <p class="project-child-text">
                         The purpose of this project was to create a display interface for the Saunders College of Business at RIT
-                        that displayed all past winners of the Vanden Brul award. I worked as the sole developer on this project and built the display
+                        that displayed all past winners of the Vanden Brul Entrepreneurial award. I worked as the sole developer on this project and built the display
                         using HTML, JavaScript, and CSS within the CodeIgniter 4 framework.</p>
                 </div>
             </div>
@@ -605,7 +632,7 @@
     <p class="head">Contact Me</p>
     <div class="contact-container">
         <br><br>
-        <form action="#" method="POST" id="contact-form">
+        <form action="https://formspree.io/f/xvoevqpa" method="post" id="contact-form">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -623,7 +650,15 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <a style="text-decoration: none" href="https://www.elighros.com">
+            <p class="footer-head">Eligh Ros</p>
+        </a>
+        <a href="https://www.linkedin.com/in/elighros/" class="linkedin-logo">
+            <img src="assets/linkedin.png" alt="LinkedIn">
+        </a>
+        <p class="footer-text">elighros.com © 2024. All Right Reserved.</p>
+    </footer>
 </div>
 
 </body>
